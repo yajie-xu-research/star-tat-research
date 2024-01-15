@@ -1,0 +1,28 @@
+# Python / packaging
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Test caches
+.pytest_cache/
+.coverage
+
+# Editor / OS noise
+.DS_Store
+
+# Evidence and private data (never versioned)
+evidence/
+data/private/
+logs/*.payload
+governance/*.secrets.json
+
+# Wall-clock run outputs: only curated historical run directories may enter
+# version control. New runs land in outputs/runs/ but must be curated
+# (status/known_issues reviewed) before they are committed.
+outputs/runs/*/
+!outputs/runs/p1_replay/
+!outputs/runs/p1_evaluation/

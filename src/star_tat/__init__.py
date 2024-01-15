@@ -1,0 +1,1 @@
+"""Star-tat CLI package."""
