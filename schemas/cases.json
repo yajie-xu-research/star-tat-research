@@ -1,0 +1,17 @@
+{
+  "table": "cases",
+  "description": "One row per synthetic case. released_at_utc is the outcome and is never a feature.",
+  "columns": [
+    {"name": "case_key", "type": "string", "required": true, "unique": true,
+     "description": "Pseudonymous internal correlation key. No patient identifiers."},
+    {"name": "site_key", "type": "string", "required": true, "unique": false},
+    {"name": "workflow_version", "type": "string", "required": true, "unique": false},
+    {"name": "test_family", "type": "string", "required": true, "unique": false},
+    {"name": "priority_class", "type": "string", "required": true, "unique": false},
+    {"name": "received_at_utc", "type": "iso8601_utc", "required": true, "unique": false},
+    {"name": "released_at_utc", "type": "iso8601_utc", "required": false, "unique": false,
+     "description": "Outcome only; empty when the case is not released."},
+    {"name": "is_completed", "type": "int01", "required": true, "unique": false,
+     "description": "1 = released, 0 = pending observation (censored)."}
+  ]
+}

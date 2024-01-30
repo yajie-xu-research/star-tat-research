@@ -1,0 +1,11 @@
+{
+  "table": "predict_requests",
+  "description": "In-flight prediction requests. One case may carry several requests at different as_of_utc; every request of a case_key is assigned to the same data split.",
+  "columns": [
+    {"name": "case_key", "type": "string", "required": true},
+    {"name": "as_of_utc", "type": "iso8601_utc", "required": true},
+    {"name": "request_id", "type": "string", "required": true, "unique": true},
+    {"name": "purpose", "type": "string", "required": true}
+  ],
+  "primary_key": ["request_id"]
+}

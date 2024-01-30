@@ -1,0 +1,13 @@
+{
+  "table": "events",
+  "description": "Raw LIS stage events. occurred_at_utc is when the event happened; known_at_utc is when the system could first answer a query about it. The difference is preserved, never silently rewritten.",
+  "columns": [
+    {"name": "case_key", "type": "string", "required": true},
+    {"name": "event_code_raw", "type": "string", "required": true},
+    {"name": "occurred_at_utc", "type": "iso8601_utc", "required": true},
+    {"name": "known_at_utc", "type": "iso8601_utc", "required": true},
+    {"name": "source_system", "type": "string", "required": true},
+    {"name": "record_version", "type": "int", "required": false, "default": 1}
+  ],
+  "primary_key": ["case_key", "event_code_raw", "occurred_at_utc", "record_version"]
+}

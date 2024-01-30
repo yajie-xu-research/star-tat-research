@@ -1,0 +1,17 @@
+{
+  "table": "stage_map",
+  "description": "Reviewed mapping from raw event codes to canonical stages per site and workflow version, with validity windows. Codes absent for a site/version (or mapped to UNMAPPED) are never silently mapped.",
+  "columns": [
+    {"name": "site_key", "type": "string", "required": true},
+    {"name": "workflow_version", "type": "string", "required": true},
+    {"name": "event_code_raw", "type": "string", "required": true},
+    {"name": "canonical_stage", "type": "enum", "required": true,
+     "values": ["SAMPLE_RECEIVED", "ACCESSIONED", "LIBRARY_PREPARED",
+                "SEQUENCING_STARTED", "ANALYSIS_COMPLETE", "REVIEWED",
+                "RELEASED", "UNMAPPED"]},
+    {"name": "valid_from", "type": "date", "required": true},
+    {"name": "valid_to", "type": "date", "required": true},
+    {"name": "reviewed_by", "type": "string", "required": true}
+  ],
+  "primary_key": ["site_key", "workflow_version", "event_code_raw"]
+}

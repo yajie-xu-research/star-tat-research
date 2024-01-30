@@ -1,0 +1,15 @@
+{
+  "table": "load_snapshots",
+  "description": "Operational statistics as known at snapshot time. Values reflect the measure at snapshot_at_utc, never later backfills. A snapshot is usable for a request only when snapshot_at_utc <= as_of_utc.",
+  "columns": [
+    {"name": "site_key", "type": "string", "required": true},
+    {"name": "workflow_version", "type": "string", "required": true},
+    {"name": "snapshot_at_utc", "type": "iso8601_utc", "required": true},
+    {"name": "queue_size", "type": "int", "required": true, "min": 0},
+    {"name": "batch_load", "type": "float", "required": true, "min": 0.0, "max": 1.0},
+    {"name": "instrument_util", "type": "float", "required": true, "min": 0.0, "max": 1.0},
+    {"name": "source_system", "type": "string", "required": true},
+    {"name": "record_version", "type": "int", "required": false, "default": 1}
+  ],
+  "primary_key": ["site_key", "workflow_version", "snapshot_at_utc", "record_version"]
+}

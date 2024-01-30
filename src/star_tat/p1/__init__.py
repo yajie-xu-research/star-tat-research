@@ -1,0 +1,1 @@
+"""Star-tat domain package."""
