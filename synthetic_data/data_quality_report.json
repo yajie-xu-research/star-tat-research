@@ -1,0 +1,5275 @@
+{
+  "fatal_count": 0,
+  "fatal_issues": [],
+  "input_dir": "synthetic_data",
+  "load_errors": [],
+  "stages_config": "configs/p1_stages.yaml",
+  "stages_config_hash": "b6535e1bcfb9a3fdace257510a2c2c490f9a33f4930c1e08b7e64a232996cf91",
+  "tables": {
+    "cases": {
+      "censored": 595,
+      "columns": [
+        "case_key",
+        "site_key",
+        "workflow_version",
+        "test_family",
+        "priority_class",
+        "received_at_utc",
+        "released_at_utc",
+        "is_completed"
+      ],
+      "completed": 5009,
+      "rows": 5604
+    },
+    "events": {
+      "columns": [
+        "case_key",
+        "event_code_raw",
+        "occurred_at_utc",
+        "known_at_utc",
+        "source_system",
+        "record_version"
+      ],
+      "rows": 34695
+    },
+    "load_snapshots": {
+      "columns": [
+        "site_key",
+        "workflow_version",
+        "snapshot_at_utc",
+        "queue_size",
+        "batch_load",
+        "instrument_util",
+        "source_system",
+        "record_version"
+      ],
+      "rows": 872
+    },
+    "predict_requests": {
+      "columns": [
+        "case_key",
+        "as_of_utc",
+        "request_id",
+        "purpose"
+      ],
+      "rows": 6887
+    },
+    "stage_map": {
+      "columns": [
+        "site_key",
+        "workflow_version",
+        "event_code_raw",
+        "canonical_stage",
+        "valid_from",
+        "valid_to",
+        "reviewed_by"
+      ],
+      "rows": 60
+    }
+  },
+  "validation_outcome": "PASS",
+  "warning_count": 743,
+  "warnings": [
+    {
+      "detail": "event entered the system 147 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 142 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 205 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 65,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 97,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 106 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 136,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 215 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 158,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 89 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 206,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 72 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 305,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 374,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 175 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 460,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 93 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 542,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 141 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 550,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 91 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 813,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 228 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 935,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1070,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 232 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1089,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1110,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 67 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1188,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 115 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1202,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 237 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1216,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 69 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1285,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1295,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 158 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1318,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 104 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1414,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1569,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 161 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1609,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 133 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1620,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 164 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1648,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 74 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1649,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 144 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1652,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1666,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 201 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1725,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 171 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1860,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 191 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1870,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1893,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 225 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1922,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 191 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1981,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 90 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1993,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 146 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 1996,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 224 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2181,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 228 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2253,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 107 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2288,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 217 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2351,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 225 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2352,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 234 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2403,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2416,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2424,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 154 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2476,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 144 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2503,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 165 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2511,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 130 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2531,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 184 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2731,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 196 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2748,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 186 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2793,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2884,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 130 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2969,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 81 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 2993,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 195 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3111,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 224 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3207,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 153 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3218,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 124 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3279,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 99 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3319,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 133 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3321,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 134 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3328,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 185 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3351,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 215 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3369,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3546,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 132 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3552,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 191 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3605,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 84 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3630,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 170 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3684,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 61 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3687,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 140 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3692,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 127 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3711,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 174 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3826,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 90 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3844,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 202 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3903,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 225 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 3979,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 207 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4166,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 162 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4194,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 122 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4257,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4287,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 92 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4426,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 161 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4453,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 129 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4461,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 168 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4503,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4510,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 76 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4788,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 233 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4847,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 207 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 4977,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 232 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5005,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 211 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5087,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 223 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5135,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5168,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 84 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5217,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5223,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 230 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5260,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 128 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5278,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 116 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5298,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 234 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5349,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 174 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5354,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 133 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5368,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 128 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5398,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 134 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5422,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 128 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5481,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 178 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5497,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 205 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5536,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 153 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5615,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 120 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5625,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 178 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5876,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5880,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5882,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 228 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5906,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 141 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 5958,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 137 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6051,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 173 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6074,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 186 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6077,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6193,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 201 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6203,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 176 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6237,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6262,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 121 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6303,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 185 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6338,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 147 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6362,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 221 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6378,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6389,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 159 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6412,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 206 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6465,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 72 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6554,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 70 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6569,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 117 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6588,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 206 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6605,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 172 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6610,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 104 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6643,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 87 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6655,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 95 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6727,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 141 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6777,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 212 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6870,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 103 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6892,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 123 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6908,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 153 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6918,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6935,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 161 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6944,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 6984,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 142 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7025,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 90 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7113,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 188 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7172,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 176 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7173,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7241,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7309,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7321,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 161 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7323,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 170 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7333,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 169 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7377,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 60 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7439,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7477,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 164 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7484,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 111 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7544,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 88 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7571,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 105 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7583,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7596,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 47 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7657,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 103 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 7885,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 79 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8037,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8118,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8165,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 167 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8168,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 202 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8239,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8302,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 213 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8403,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8433,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 32 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8439,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 45 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8525,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 92 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8595,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 219 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8610,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 73 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8673,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 54 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8732,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 53 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8734,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8838,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 44 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8860,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8902,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 90 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8996,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 194 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 8999,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9159,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 65 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9203,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 99 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9276,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 147 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9294,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9295,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 55 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9305,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 181 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9388,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9391,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 73 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9404,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9450,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 188 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9584,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 162 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9603,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 151 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9659,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9676,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9687,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 31 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9725,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 68 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9746,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 66 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9768,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9863,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 235 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9892,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 112 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9908,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 123 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 9929,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 195 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10010,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10061,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 172 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10082,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10114,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 33 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10271,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10284,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 195 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10315,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 163 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10329,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 95 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10342,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 159 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10570,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 120 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10664,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10666,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10687,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 79 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10688,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 148 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10697,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10722,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10772,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 103 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10793,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 139 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10839,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 61 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10863,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 126 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10914,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 185 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10933,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 214 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10945,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 204 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10964,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 50 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 10987,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 191 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11012,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11054,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 88 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11087,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11093,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11123,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 89 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11142,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 158 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11156,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 124 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11189,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 41 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11191,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11203,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 101 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11576,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11664,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 108 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11678,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 212 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11688,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 222 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11699,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11799,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 134 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11922,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11952,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 99 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 11957,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 143 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12032,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 199 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12079,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 199 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12094,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 139 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12146,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12286,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 212 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12340,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 120 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12365,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12510,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 124 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12590,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 233 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12596,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 114 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12618,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 231 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12685,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12696,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12699,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 143 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12719,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 205 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12724,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 70 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12732,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12832,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 66 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12872,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 222 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12906,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 106 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12971,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 66 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12982,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 167 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 12989,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13019,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 211 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13030,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 135 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13054,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13259,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 116 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13318,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13346,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 162 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13436,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 208 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13550,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 163 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13577,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 239 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13583,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 64 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13763,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 93 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13814,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 128 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13824,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 134 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13883,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 209 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13927,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 183 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13929,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 114 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13943,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 220 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13954,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 115 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 13989,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 137 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14044,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 174 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14086,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 131 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14199,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 227 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14231,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14260,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 97 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14275,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 217 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14349,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 178 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14463,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 205 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14556,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 171 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14669,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 97 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14708,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 138 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14803,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 233 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 14973,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 230 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15137,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 202 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15158,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 144 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15209,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 111 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15342,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 117 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15356,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 68 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15372,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15377,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15379,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 125 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15567,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15569,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15584,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 106 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15609,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 174 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 15980,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 156 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16008,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 198 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16123,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 131 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16203,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 129 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16232,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 86 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16249,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16328,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 114 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16348,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 91 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16516,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 125 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16521,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 187 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16530,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16635,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16677,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 138 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16733,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 88 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16775,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16783,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 224 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16805,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 77 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16825,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 165 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16832,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 236 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16839,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 170 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16863,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 137 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16874,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16878,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 134 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16891,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 181 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 16941,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 143 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17010,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17026,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 73 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17063,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17092,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 122 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17102,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 182 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17185,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17206,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 105 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17286,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 234 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17371,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 213 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17380,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 206 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17406,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17449,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 126 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17501,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 107 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17537,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 120 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17551,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 197 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17557,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 106 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17584,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 65 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17591,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 157 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17599,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 146 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17615,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 165 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17720,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 77 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17776,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 108 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17779,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 122 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17800,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17851,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 208 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17873,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 95 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17886,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 186 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 17894,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 228 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18005,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18040,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 110 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18143,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 142 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18144,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18329,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 131 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18334,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 230 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18469,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 64 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18524,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18614,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 121 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18663,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 180 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18707,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 226 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18718,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 228 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18727,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 221 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18940,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 198 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 18960,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 196 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19033,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 107 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19040,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19051,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19137,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 184 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19165,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 156 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19275,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 198 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19294,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 132 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19348,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 146 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19359,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 208 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19381,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 197 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19480,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 103 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19484,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 96 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19491,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19585,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 152 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19714,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 133 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19732,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 73 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19784,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 48 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19791,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19826,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 95 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19885,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19899,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19969,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 97 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 19983,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 225 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20034,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 124 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20156,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 61 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20292,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 109 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20345,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 219 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20366,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 89 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20386,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 65 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20540,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 62 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20567,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 144 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20583,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 159 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20588,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 125 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20713,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 105 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20726,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 207 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 20936,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 138 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21075,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21129,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21274,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 93 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21275,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 64 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21281,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 61 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21283,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 223 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21307,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 211 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21396,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 180 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21587,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 126 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21594,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21668,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 173 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21677,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21704,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21717,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 74 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21884,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 91 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21896,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21905,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 55 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21922,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 239 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 21954,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 77 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22020,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22028,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 97 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22048,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 183 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22097,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 226 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22154,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 180 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22220,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22302,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 101 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22434,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 81 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22457,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 204 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22506,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 44 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22535,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22547,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 117 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22636,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 131 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22647,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 167 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22660,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 82 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22758,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 126 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22797,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 22814,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 131 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23035,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23104,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 54 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23136,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 186 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23200,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 222 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23211,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 31 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23356,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23441,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 68 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23476,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23481,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 120 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23598,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 79 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23664,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 214 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23677,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23730,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 64 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23733,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 171 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23753,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 195 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23772,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 219 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23824,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23825,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 179 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23828,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 51 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23839,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 225 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23857,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 201 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23861,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 189 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23869,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23931,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 141 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23986,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 216 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 23999,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 211 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24001,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 76 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24188,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24249,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 40 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24277,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 111 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24308,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 67 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24394,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 121 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24446,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 199 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24577,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24607,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 143 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24653,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24665,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24697,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 221 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24710,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 183 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 24817,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 178 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25043,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 152 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25118,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 107 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25213,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 173 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25308,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25359,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 181 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25558,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 239 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25561,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25593,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 233 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25669,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 182 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25757,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 224 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25780,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 176 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25797,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 158 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25813,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 91 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25843,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 108 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25968,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 239 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25977,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25991,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 183 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 25994,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26021,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26046,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 139 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26054,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 108 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26115,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 172 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26173,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 174 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26194,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26218,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 63 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26265,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26298,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26310,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 222 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26314,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 232 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26320,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 204 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26337,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 211 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26389,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26409,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 167 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26444,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 229 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26458,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 181 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26463,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26644,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26652,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 230 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26745,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 168 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 26854,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 109 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27195,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27200,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 226 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27246,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 238 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27259,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 77 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27338,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 162 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27447,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27528,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 81 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27572,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27700,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 141 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27742,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 147 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27841,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27853,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 128 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27937,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 160 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27941,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 89 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 27971,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 216 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28090,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 150 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28130,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 90 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28206,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 178 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28221,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 129 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28246,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 189 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28247,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 212 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28401,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 205 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28487,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28518,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 175 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28633,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 201 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28724,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28801,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 28940,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 173 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29019,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 123 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29047,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 144 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29108,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 118 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29111,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 176 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29122,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 60 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29131,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 130 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29171,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 119 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29215,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29266,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 157 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29295,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 68 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29351,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 168 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29379,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 142 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29455,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 140 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29614,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29827,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 112 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29848,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 97 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29855,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 210 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29895,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 227 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 29932,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 188 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30038,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 83 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30041,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 188 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30054,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 121 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30059,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 198 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30191,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 104 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30232,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 116 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30250,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30268,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 148 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30277,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 200 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30454,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30525,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 108 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30691,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 208 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30780,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 113 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30796,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 197 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30801,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 152 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30803,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 168 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30828,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 198 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30874,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 186 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30910,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 204 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 30999,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 156 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31005,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31031,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 100 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31126,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 28 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31160,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 181 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31171,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 166 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31280,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 60 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31319,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 110 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31361,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 149 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31369,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 104 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31417,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 89 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31531,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 160 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31554,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 49 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31559,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 62 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31566,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31577,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 145 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31613,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 160 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31632,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 99 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31660,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 182 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31750,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 122 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31802,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 41 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31833,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 172 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31866,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 212 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31889,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 127 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31944,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 61 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 31968,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32059,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32184,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 94 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32185,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 75 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32268,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 80 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32358,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 64 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32465,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 85 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32476,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 84 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32611,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 107 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32683,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 42 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32698,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 165 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32761,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 130 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32770,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 95 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32792,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 98 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32928,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 168 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 32989,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33074,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 235 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33102,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 101 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33119,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 233 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33140,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 136 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33145,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 192 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33269,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 71 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33298,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 133 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33444,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 218 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33448,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 70 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33561,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 70 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33597,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 167 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33760,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 41 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 33947,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 176 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34044,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 77 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34102,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 122 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34141,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 152 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34149,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 194 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34181,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 190 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34209,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 121 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34242,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 197 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34334,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 78 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34465,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 73 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34501,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 195 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34562,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 79 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34631,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 45 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34672,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "event entered the system 42 days after it occurred",
+      "issue": "DELAYED_ENTRY",
+      "row": 34674,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_A/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 639,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_A/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 675,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_A/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 1278,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_A/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 3242,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_A/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 3719,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_A/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 3882,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_A/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 6674,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_A/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 7440,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_A/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 8622,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'RCPT' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11266,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'ACC' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11267,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'LIBP' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11268,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'SEQ' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11269,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'ANL' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11270,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'REL' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11271,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'REV' for SITE_A/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11277,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_B/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11428,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_B/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 11875,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_B/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 12392,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_B/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 16696,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_B/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 16824,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_B/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 17560,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_B/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 21250,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_B/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 22955,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'REC' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24378,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'ACC' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24379,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'QC' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24380,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'SEQ' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24381,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'ANA' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24382,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'CHK' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24383,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'OUT' for SITE_B/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 24385,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_C/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 25257,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_C/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 25603,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_C/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 27156,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_C/WF_V1 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 27164,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_C/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 30160,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XADM' for SITE_C/WF_V2 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 30655,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XMISC' for SITE_C/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 31236,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XQCC' for SITE_C/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 31891,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'XERR' for SITE_C/WF_V3 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 32734,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'IN' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34648,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'VER' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34649,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'DONE' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34650,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'SIGN' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34651,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'ISSUE' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34652,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "code 'PREP' for SITE_C/WF_V4 has no stage_map row",
+      "issue": "UNMAPPED_STAGE_CODE",
+      "row": 34660,
+      "severity": "warning",
+      "table": "events"
+    },
+    {
+      "detail": "SITE_C lacks SEQUENCING_STARTED: sequencing performed offsite; step absent from local event stream",
+      "issue": "NOT_COMPARABLE",
+      "row": -1,
+      "severity": "warning",
+      "table": "stage_map"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1746,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1747,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1748,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1749,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1750,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1751,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1752,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 1753,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3775,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3776,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3777,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3778,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3779,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3780,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3781,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 3782,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5596,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5597,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5598,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5599,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5600,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5601,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5602,
+      "severity": "warning",
+      "table": "cases"
+    },
+    {
+      "detail": "workflow_version 'WF_V4' not in dictionary",
+      "issue": "UNKNOWN_WORKFLOW_VERSION",
+      "row": 5603,
+      "severity": "warning",
+      "table": "cases"
+    }
+  ]
+}
