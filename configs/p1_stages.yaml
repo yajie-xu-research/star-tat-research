@@ -1,0 +1,58 @@
+# STAR-TAT stage dictionary v1.0
+# Frozen 2025-06-10. A new dictionary version is required for any mapping change;
+# historical runs remain reproducible with this file.
+#
+# canonical_stages: the normalized stage chain shared across sites. The order
+# is fixed and is never inferred from data.
+canonical_stages:
+  - SAMPLE_RECEIVED
+  - ACCESSIONED
+  - LIBRARY_PREPARED
+  - SEQUENCING_STARTED
+  - ANALYSIS_COMPLETE
+  - REVIEWED
+  - RELEASED
+
+# Raw event codes per site. Each site's LIS uses its own vocabulary; codes are
+# mapped to canonical stages only by this reviewed dictionary.
+site_event_codes:
+  SITE_A:
+    SAMPLE_RECEIVED: RCPT
+    ACCESSIONED: ACC
+    LIBRARY_PREPARED: LIBP
+    SEQUENCING_STARTED: SEQ
+    ANALYSIS_COMPLETE: ANL
+    REVIEWED: REV
+    RELEASED: REL
+  SITE_B:
+    SAMPLE_RECEIVED: REC
+    ACCESSIONED: ACC
+    LIBRARY_PREPARED: QC
+    SEQUENCING_STARTED: SEQ
+    ANALYSIS_COMPLETE: ANA
+    REVIEWED: CHK
+    RELEASED: OUT
+  SITE_C:
+    SAMPLE_RECEIVED: IN
+    ACCESSIONED: VER
+    LIBRARY_PREPARED: PREP
+    ANALYSIS_COMPLETE: DONE
+    REVIEWED: SIGN
+    RELEASED: ISSUE
+
+# Workflow-version validity windows. Events and cases must fall inside the
+# window of the version they declare.
+workflow_versions:
+  WF_V1: {valid_from: "2024-01-15", valid_to: "2024-09-01"}
+  WF_V2: {valid_from: "2024-09-01", valid_to: "2025-06-01"}
+  WF_V3: {valid_from: "2025-06-01", valid_to: "2026-06-30"}
+
+# Site-stage combinations that cannot support cross-site comparison for that
+# stage. Requests whose stage chain depends on these stages are marked
+# NOT_COMPARABLE; the program never fabricates the missing stage.
+non_comparable:
+  - {site_key: SITE_C, canonical_stage: SEQUENCING_STARTED,
+     reason: "sequencing performed offsite; step absent from local event stream"}
+
+# Reviewer tokens for the dictionary rows written into stage_map.csv.
+reviewed_by: "workflow-ops-review-01"
