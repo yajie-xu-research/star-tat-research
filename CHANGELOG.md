@@ -4,6 +4,13 @@ All notable changes to this research codebase are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.1.0] - 2025-07-15
+
+### Added
+
+- External validation protocol v1 (draft) and the pilot deployment plan
+  (`external/`); status recorded as not obtained.
+
 ## [1.0.0] - 2025-06-10
 
 ### Added
