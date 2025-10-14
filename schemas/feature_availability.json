@@ -1,0 +1,14 @@
+{
+  "table": "feature_availability",
+  "description": "Audit of every model input: where it comes from and whether it can be queried at as_of_utc. Outcome fields (released_at_utc) are listed as outcome_only and are excluded from every feature path.",
+  "columns": [
+    {"name": "feature_name", "type": "string", "required": true},
+    {"name": "source_table", "type": "string", "required": true},
+    {"name": "business_definition", "type": "string", "required": true},
+    {"name": "generated_at", "type": "string", "required": true},
+    {"name": "queryable_at", "type": "string", "required": true},
+    {"name": "available_at_as_of", "type": "string", "required": true},
+    {"name": "outcome_only", "type": "int01", "required": true},
+    {"name": "reviewed_by", "type": "string", "required": true}
+  ]
+}
