@@ -3,6 +3,8 @@
 Mirrors the repository root `CHANGELOG.md`. See that file for the full
 entry list.
 
+- **1.2.0 (2025-11-19)** — stratified temporal block assignment with
+  case-level grouping; deterministic run ids and result hashes.
 - **1.1.0 (2025-07-15)** — external validation protocol v1 and the pilot
   deployment plan.
 - **1.0.0 (2025-06-10)** — seeded data generator, frozen seven-stage chain,

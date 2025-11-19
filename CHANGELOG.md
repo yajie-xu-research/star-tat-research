@@ -4,6 +4,17 @@ All notable changes to this research codebase are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.0] - 2025-11-19
+
+### Added
+
+- Temporal block assignment (train 60% / calibration 20% / holdout 20%)
+  stratified by site x workflow version, with all requests of one case
+  forced into the same block to prevent case-level leakage.
+- Deterministic result hashing: run id and result hash recompute from data,
+  config, seed, model/rule version, and result files; wall-clock fields are
+  excluded.
+
 ## [1.1.0] - 2025-07-15
 
 ### Added
