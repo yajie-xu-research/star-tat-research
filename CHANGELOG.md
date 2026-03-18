@@ -4,6 +4,13 @@ All notable changes to this research codebase are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.3.0] - 2026-03-18
+
+### Added
+
+- External validation protocol v2 and the site readiness checklist
+  (`external/`); status remains not obtained.
+
 ## [1.2.0] - 2025-11-19
 
 ### Added
