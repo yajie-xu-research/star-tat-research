@@ -1,0 +1,509 @@
+{
+  "calibration": {
+    "coverage_target": 0.9,
+    "min_calibration_samples": 30,
+    "strata": {
+      "SITE_A/WF_V1": {
+        "conformal_q": 24.9839,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 101,
+        "n_train": 300,
+        "q": 22.284,
+        "site_key": "SITE_A",
+        "train_ranges": {
+          "batch_load": [
+            0.0008,
+            1.2659
+          ],
+          "instrument_util": [
+            0.1258,
+            1.1509
+          ],
+          "queue_size_log1p": [
+            5.1769,
+            6.0199
+          ]
+        },
+        "workflow_version": "WF_V1"
+      },
+      "SITE_A/WF_V2": {
+        "conformal_q": 29.9371,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 128,
+        "n_train": 366,
+        "q": 28.1016,
+        "site_key": "SITE_A",
+        "train_ranges": {
+          "batch_load": [
+            0.1459,
+            1.1523
+          ],
+          "instrument_util": [
+            0.2662,
+            1.027
+          ],
+          "queue_size_log1p": [
+            4.8905,
+            5.7701
+          ]
+        },
+        "workflow_version": "WF_V2"
+      },
+      "SITE_A/WF_V3": {
+        "conformal_q": 25.0421,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 157,
+        "n_train": 444,
+        "q": 22.2959,
+        "site_key": "SITE_A",
+        "train_ranges": {
+          "batch_load": [
+            -0.1948,
+            1.37
+          ],
+          "instrument_util": [
+            0.0374,
+            1.3286
+          ],
+          "queue_size_log1p": [
+            4.6686,
+            5.6681
+          ]
+        },
+        "workflow_version": "WF_V3"
+      },
+      "SITE_B/WF_V1": {
+        "conformal_q": 26.53,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 156,
+        "n_train": 428,
+        "q": 24.1973,
+        "site_key": "SITE_B",
+        "train_ranges": {
+          "batch_load": [
+            0.0605,
+            1.1821
+          ],
+          "instrument_util": [
+            0.4041,
+            0.9345
+          ],
+          "queue_size_log1p": [
+            4.9086,
+            5.5301
+          ]
+        },
+        "workflow_version": "WF_V1"
+      },
+      "SITE_B/WF_V2": {
+        "conformal_q": 23.7377,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 151,
+        "n_train": 419,
+        "q": 22.5246,
+        "site_key": "SITE_B",
+        "train_ranges": {
+          "batch_load": [
+            -0.0559,
+            1.2301
+          ],
+          "instrument_util": [
+            0.1179,
+            1.207
+          ],
+          "queue_size_log1p": [
+            4.5659,
+            5.3907
+          ]
+        },
+        "workflow_version": "WF_V2"
+      },
+      "SITE_B/WF_V3": {
+        "conformal_q": 22.6824,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 158,
+        "n_train": 448,
+        "q": 19.8776,
+        "site_key": "SITE_B",
+        "train_ranges": {
+          "batch_load": [
+            0.0922,
+            1.1231
+          ],
+          "instrument_util": [
+            0.14,
+            1.1727
+          ],
+          "queue_size_log1p": [
+            4.5888,
+            5.1187
+          ]
+        },
+        "workflow_version": "WF_V3"
+      },
+      "SITE_C/WF_V1": {
+        "conformal_q": 33.9554,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 150,
+        "n_train": 424,
+        "q": 31.9895,
+        "site_key": "SITE_C",
+        "train_ranges": {
+          "batch_load": [
+            -0.0369,
+            1.197
+          ],
+          "instrument_util": [
+            0.3305,
+            1.1785
+          ],
+          "queue_size_log1p": [
+            5.321,
+            6.256
+          ]
+        },
+        "workflow_version": "WF_V1"
+      },
+      "SITE_C/WF_V2": {
+        "conformal_q": 30.3997,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 124,
+        "n_train": 349,
+        "q": 27.6543,
+        "site_key": "SITE_C",
+        "train_ranges": {
+          "batch_load": [
+            -0.1092,
+            1.2153
+          ],
+          "instrument_util": [
+            0.0955,
+            1.1731
+          ],
+          "queue_size_log1p": [
+            5.2783,
+            5.9268
+          ]
+        },
+        "workflow_version": "WF_V2"
+      },
+      "SITE_C/WF_V3": {
+        "conformal_q": 23.615,
+        "coverage_target": 0.9,
+        "insufficient": false,
+        "n_calibration": 126,
+        "n_train": 373,
+        "q": 23.2171,
+        "site_key": "SITE_C",
+        "train_ranges": {
+          "batch_load": [
+            -0.1148,
+            1.2724
+          ],
+          "instrument_util": [
+            0.102,
+            1.2788
+          ],
+          "queue_size_log1p": [
+            5.0311,
+            5.7833
+          ]
+        },
+        "workflow_version": "WF_V3"
+      }
+    }
+  },
+  "coverage": {
+    "baseline_stratified_quantiles": {
+      "coverage": 0.8699,
+      "coverage_ci95": [
+        0.8494,
+        0.8881
+      ],
+      "covered": 1010,
+      "n": 1161,
+      "width_hours_mean": 76.84,
+      "width_hours_median": 74.92
+    },
+    "baseline_unstratified_interval": {
+      "coverage": 0.9208,
+      "coverage_ci95": [
+        0.9038,
+        0.9349
+      ],
+      "covered": 1069,
+      "n": 1161,
+      "width_hours_mean": 46.61,
+      "width_hours_median": 46.78
+    },
+    "conformal": {
+      "coverage": 0.9268,
+      "coverage_ci95": [
+        0.9104,
+        0.9404
+      ],
+      "covered": 1076,
+      "n": 1161,
+      "width_hours_mean": 53.32,
+      "width_hours_median": 50.08
+    },
+    "stratified_interval": {
+      "coverage": 0.9087,
+      "coverage_ci95": [
+        0.8908,
+        0.9239
+      ],
+      "covered": 1055,
+      "n": 1161,
+      "width_hours_mean": 49.32,
+      "width_hours_median": 46.43
+    }
+  },
+  "evaluated_result_hash": "d226c4495ba79fc3f40bb269475cacfb001be4650b565e8d5cbebd29275782bc",
+  "evaluated_run_id": "P1R_c08ba354f3c8",
+  "excluded_rows": {
+    "by_reason": {
+      "CENSORED": 585,
+      "LATE_KNOWN_EVENT": 853
+    },
+    "total": 1438
+  },
+  "holdout": {
+    "censored": 0,
+    "completed_with_truth": 1249,
+    "evaluated": 1161,
+    "rejected_by_reason": {
+      "SHIFT_DETECTED": 81,
+      "UNKNOWN_WORKFLOW_VERSION": 3,
+      "UNMAPPED_STAGE": 4
+    },
+    "rejected_total": 88,
+    "requests": 1249
+  },
+  "long_tat": {
+    "long_count": 117,
+    "methods": {
+      "baseline_stratified_quantiles": {
+        "late_missed": 75,
+        "late_missed_rate": 0.641,
+        "lead_hours_median": -5.44,
+        "n": 117
+      },
+      "baseline_unstratified_interval": {
+        "late_missed": 80,
+        "late_missed_rate": 0.6838,
+        "lead_hours_median": -5.74,
+        "n": 117
+      },
+      "conformal": {
+        "late_missed": 87,
+        "late_missed_rate": 0.7436,
+        "lead_hours_median": -12.32,
+        "n": 117
+      },
+      "stratified_interval": {
+        "late_missed": 81,
+        "late_missed_rate": 0.6923,
+        "lead_hours_median": -10.18,
+        "n": 117
+      }
+    },
+    "threshold_hours": 101.34
+  },
+  "per_site": [
+    {
+      "coverage": 0.9114,
+      "coverage_ci95": [
+        0.8775,
+        0.9365
+      ],
+      "group": "site_key",
+      "n_evaluated": 361,
+      "value": "SITE_A"
+    },
+    {
+      "coverage": 0.8972,
+      "coverage_ci95": [
+        0.8636,
+        0.9233
+      ],
+      "group": "site_key",
+      "n_evaluated": 399,
+      "value": "SITE_B"
+    },
+    {
+      "coverage": 0.9177,
+      "coverage_ci95": [
+        0.8867,
+        0.9408
+      ],
+      "group": "site_key",
+      "n_evaluated": 401,
+      "value": "SITE_C"
+    }
+  ],
+  "per_stratum": [
+    {
+      "coverage": 0.8692,
+      "coverage_ci95": [
+        0.7923,
+        0.9204
+      ],
+      "group": "stratum",
+      "n_evaluated": 107,
+      "value": "SITE_A/WF_V1"
+    },
+    {
+      "coverage": 0.9528,
+      "coverage_ci95": [
+        0.9008,
+        0.9782
+      ],
+      "group": "stratum",
+      "n_evaluated": 127,
+      "value": "SITE_A/WF_V2"
+    },
+    {
+      "coverage": 0.9055,
+      "coverage_ci95": [
+        0.8421,
+        0.9451
+      ],
+      "group": "stratum",
+      "n_evaluated": 127,
+      "value": "SITE_A/WF_V3"
+    },
+    {
+      "coverage": 0.8571,
+      "coverage_ci95": [
+        0.7776,
+        0.9115
+      ],
+      "group": "stratum",
+      "n_evaluated": 105,
+      "value": "SITE_B/WF_V1"
+    },
+    {
+      "coverage": 0.9,
+      "coverage_ci95": [
+        0.8416,
+        0.9385
+      ],
+      "group": "stratum",
+      "n_evaluated": 150,
+      "value": "SITE_B/WF_V2"
+    },
+    {
+      "coverage": 0.9236,
+      "coverage_ci95": [
+        0.8684,
+        0.9568
+      ],
+      "group": "stratum",
+      "n_evaluated": 144,
+      "value": "SITE_B/WF_V3"
+    },
+    {
+      "coverage": 0.9013,
+      "coverage_ci95": [
+        0.8436,
+        0.9393
+      ],
+      "group": "stratum",
+      "n_evaluated": 152,
+      "value": "SITE_C/WF_V1"
+    },
+    {
+      "coverage": 0.9032,
+      "coverage_ci95": [
+        0.8384,
+        0.9438
+      ],
+      "group": "stratum",
+      "n_evaluated": 124,
+      "value": "SITE_C/WF_V2"
+    },
+    {
+      "coverage": 0.952,
+      "coverage_ci95": [
+        0.8992,
+        0.9778
+      ],
+      "group": "stratum",
+      "n_evaluated": 125,
+      "value": "SITE_C/WF_V3"
+    }
+  ],
+  "per_version": [
+    {
+      "coverage": 0.8791,
+      "coverage_ci95": [
+        0.8416,
+        0.9087
+      ],
+      "group": "workflow_version",
+      "n_evaluated": 364,
+      "value": "WF_V1"
+    },
+    {
+      "coverage": 0.9177,
+      "coverage_ci95": [
+        0.8867,
+        0.9408
+      ],
+      "group": "workflow_version",
+      "n_evaluated": 401,
+      "value": "WF_V2"
+    },
+    {
+      "coverage": 0.9268,
+      "coverage_ci95": [
+        0.8968,
+        0.9485
+      ],
+      "group": "workflow_version",
+      "n_evaluated": 396,
+      "value": "WF_V3"
+    }
+  ],
+  "point_errors": {
+    "baseline_median_history": {
+      "bias_hours": -2.93,
+      "mae_hours": 15.54,
+      "n": 1161,
+      "rmse_hours": 25.36
+    },
+    "baseline_raw_timestamp_point": {
+      "bias_hours": -2.13,
+      "mae_hours": 21.99,
+      "n": 1161,
+      "rmse_hours": 29.24
+    },
+    "baseline_tree_point": {
+      "bias_hours": 0.15,
+      "mae_hours": 11.32,
+      "n": 1161,
+      "rmse_hours": 20.44
+    },
+    "stratified_point": {
+      "bias_hours": -0.12,
+      "mae_hours": 11.97,
+      "n": 1161,
+      "rmse_hours": 19.01
+    }
+  },
+  "project": "P1_STAR_TAT",
+  "rejection_rates": {
+    "holdout_rejection_rate": 0.0705,
+    "overall_rejection_rate": 0.0624
+  },
+  "status": "INTERNAL_RESEARCH"
+}

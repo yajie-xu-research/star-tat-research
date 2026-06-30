@@ -1,0 +1,36 @@
+{
+  "_result_files": [
+    "calibration_meta.json",
+    "data/_ground_truth/true_outcomes.csv",
+    "data_quality_report.json",
+    "excluded_rows.csv",
+    "feature_availability.csv",
+    "results.csv"
+  ],
+  "command": "star-tat p1 replay --input synthetic_data --as-of-file synthetic_data/predict_requests.csv --out outputs/runs/p1_replay --stages-config configs/p1_stages.yaml --policy-config configs/p1_policy.yaml --seed 20240115",
+  "commit": "a654154b7ad1bb8578c354311823bff85eb660de",
+  "config_hash": "d875de556a67883ae442347d18c396c2257cdf358eed9502b883c2f8df27c69b",
+  "data_hash": "0a55b4ac664dc747dfd951582438e094e71f23bf09548b14752ed1d5d1f31cd6",
+  "environment": {
+    "executable": "venv/bin/python3",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "pytest": "8.4.2",
+    "python": "3.12.13",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.1"
+  },
+  "excluded_rows": 1438,
+  "input_rows": 6887,
+  "known_issues": [],
+  "model_or_rule_version": "v1.0/v1.0/tat-gbm-1.4/stratified-absres-1.4",
+  "operator": "internal-research-operator",
+  "permissions_pointer": "governance:internal_research:v1",
+  "project": "P1_STAR_TAT",
+  "result_hash": "d226c4495ba79fc3f40bb269475cacfb001be4650b565e8d5cbebd29275782bc",
+  "run_id": "P1R_c08ba354f3c8",
+  "seed": 20240115,
+  "status": "INTERNAL_RESEARCH",
+  "utc": "2026-06-30T09:00:00Z"
+}

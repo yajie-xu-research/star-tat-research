@@ -1,0 +1,62 @@
+# STAR-TAT policy v1.4
+# Frozen 2026-06-30. All tunable values are parameters.
+# The coverage target is a program parameter used to select a calibration
+# quantile.
+
+policy_version: "p1-policy-1.4"
+event_dictionary_version: "v1.0"
+stage_mapping_version: "v1.0"
+model_version: "tat-gbm-1.4"
+calibration_version: "stratified-absres-1.4"
+
+# Run bookkeeping. Historical runs are recorded as INTERNAL_RESEARCH.
+run:
+  status: INTERNAL_RESEARCH
+  operator: "internal-research-operator"
+  permissions_pointer: "governance:internal_research:v1"
+  known_issues: []
+
+# Data split. Splits are stratified by site x workflow_version and are
+# temporal within each stratum; all requests of one case_key move together.
+split:
+  train_fraction: 0.60
+  calibration_fraction: 0.20
+  holdout_fraction: 0.20
+
+# Sample-size floor for the calibration block of a stratum. Below this the
+# stratum abstains with INSUFFICIENT_CALIBRATION instead of emitting an
+# interval. Regular runs carry 100-160 calibration rows per stratum (the
+# shipped run: 101-158) and do not trigger this; the rejection path is
+# exercised by dedicated tests.
+min_calibration_samples: 30
+min_train_samples: 50
+
+# Interval construction. The point model is fit on the training block; the
+# calibration block supplies absolute residuals; q is the empirical quantile
+# of those residuals at the coverage target. The interval for a request is
+# [max(0, pred - q), pred + q] hours added to as_of_utc.
+coverage_target: 0.90
+interval:
+  method: "absolute-residual-quantile"
+  conformal_control: true
+  conformal_alpha: 0.10
+
+model:
+  name: "gradient-boosting-regressor"
+  n_estimators: 300
+  learning_rate: 0.05
+  max_depth: 3
+  random_state: 20240115
+
+# Load-regime features are required by the stratified interval model. When a
+# request has no load snapshot known at as_of_utc the request abstains with
+# FEATURE_UNAVAILABLE rather than falling back silently.
+require_load_features: true
+
+# Pre-result drift checks. Each request's load-regime features are compared
+# with the training-block range of the stratum; values outside the validated
+# range abstain with SHIFT_DETECTED. No future outcomes are consulted.
+shift_checks:
+  queue_size: {mode: range}
+  batch_load: {mode: range}
+  instrument_util: {mode: range}

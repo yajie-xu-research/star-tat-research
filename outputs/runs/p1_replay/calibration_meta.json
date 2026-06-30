@@ -1,0 +1,235 @@
+{
+  "policy": {
+    "coverage_target": 0.9,
+    "interval": {
+      "conformal_alpha": 0.1,
+      "conformal_control": true,
+      "method": "absolute-residual-quantile"
+    },
+    "min_calibration_samples": 30,
+    "min_train_samples": 50,
+    "split": {
+      "calibration_fraction": 0.2,
+      "holdout_fraction": 0.2,
+      "train_fraction": 0.6
+    }
+  },
+  "strata": {
+    "SITE_A/WF_V1": {
+      "conformal_q": 24.9839,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 101,
+      "n_train": 300,
+      "q": 22.284,
+      "site_key": "SITE_A",
+      "train_ranges": {
+        "batch_load": [
+          0.0008,
+          1.2659
+        ],
+        "instrument_util": [
+          0.1258,
+          1.1509
+        ],
+        "queue_size_log1p": [
+          5.1769,
+          6.0199
+        ]
+      },
+      "workflow_version": "WF_V1"
+    },
+    "SITE_A/WF_V2": {
+      "conformal_q": 29.9371,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 128,
+      "n_train": 366,
+      "q": 28.1016,
+      "site_key": "SITE_A",
+      "train_ranges": {
+        "batch_load": [
+          0.1459,
+          1.1523
+        ],
+        "instrument_util": [
+          0.2662,
+          1.027
+        ],
+        "queue_size_log1p": [
+          4.8905,
+          5.7701
+        ]
+      },
+      "workflow_version": "WF_V2"
+    },
+    "SITE_A/WF_V3": {
+      "conformal_q": 25.0421,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 157,
+      "n_train": 444,
+      "q": 22.2959,
+      "site_key": "SITE_A",
+      "train_ranges": {
+        "batch_load": [
+          -0.1948,
+          1.37
+        ],
+        "instrument_util": [
+          0.0374,
+          1.3286
+        ],
+        "queue_size_log1p": [
+          4.6686,
+          5.6681
+        ]
+      },
+      "workflow_version": "WF_V3"
+    },
+    "SITE_B/WF_V1": {
+      "conformal_q": 26.53,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 156,
+      "n_train": 428,
+      "q": 24.1973,
+      "site_key": "SITE_B",
+      "train_ranges": {
+        "batch_load": [
+          0.0605,
+          1.1821
+        ],
+        "instrument_util": [
+          0.4041,
+          0.9345
+        ],
+        "queue_size_log1p": [
+          4.9086,
+          5.5301
+        ]
+      },
+      "workflow_version": "WF_V1"
+    },
+    "SITE_B/WF_V2": {
+      "conformal_q": 23.7377,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 151,
+      "n_train": 419,
+      "q": 22.5246,
+      "site_key": "SITE_B",
+      "train_ranges": {
+        "batch_load": [
+          -0.0559,
+          1.2301
+        ],
+        "instrument_util": [
+          0.1179,
+          1.207
+        ],
+        "queue_size_log1p": [
+          4.5659,
+          5.3907
+        ]
+      },
+      "workflow_version": "WF_V2"
+    },
+    "SITE_B/WF_V3": {
+      "conformal_q": 22.6824,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 158,
+      "n_train": 448,
+      "q": 19.8776,
+      "site_key": "SITE_B",
+      "train_ranges": {
+        "batch_load": [
+          0.0922,
+          1.1231
+        ],
+        "instrument_util": [
+          0.14,
+          1.1727
+        ],
+        "queue_size_log1p": [
+          4.5888,
+          5.1187
+        ]
+      },
+      "workflow_version": "WF_V3"
+    },
+    "SITE_C/WF_V1": {
+      "conformal_q": 33.9554,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 150,
+      "n_train": 424,
+      "q": 31.9895,
+      "site_key": "SITE_C",
+      "train_ranges": {
+        "batch_load": [
+          -0.0369,
+          1.197
+        ],
+        "instrument_util": [
+          0.3305,
+          1.1785
+        ],
+        "queue_size_log1p": [
+          5.321,
+          6.256
+        ]
+      },
+      "workflow_version": "WF_V1"
+    },
+    "SITE_C/WF_V2": {
+      "conformal_q": 30.3997,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 124,
+      "n_train": 349,
+      "q": 27.6543,
+      "site_key": "SITE_C",
+      "train_ranges": {
+        "batch_load": [
+          -0.1092,
+          1.2153
+        ],
+        "instrument_util": [
+          0.0955,
+          1.1731
+        ],
+        "queue_size_log1p": [
+          5.2783,
+          5.9268
+        ]
+      },
+      "workflow_version": "WF_V2"
+    },
+    "SITE_C/WF_V3": {
+      "conformal_q": 23.615,
+      "coverage_target": 0.9,
+      "insufficient": false,
+      "n_calibration": 126,
+      "n_train": 373,
+      "q": 23.2171,
+      "site_key": "SITE_C",
+      "train_ranges": {
+        "batch_load": [
+          -0.1148,
+          1.2724
+        ],
+        "instrument_util": [
+          0.102,
+          1.2788
+        ],
+        "queue_size_log1p": [
+          5.0311,
+          5.7833
+        ]
+      },
+      "workflow_version": "WF_V3"
+    }
+  }
+}

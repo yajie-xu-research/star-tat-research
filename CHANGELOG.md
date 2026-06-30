@@ -4,6 +4,31 @@ All notable changes to this research codebase are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.4.0] - 2026-06-30
+
+### Added
+
+- Split-conformal comparison intervals alongside the calibration-quantile
+  intervals for every stratum.
+- `p1 evaluate` long-turnaround report: holdout cases with remaining time at
+  or above the P90 threshold get per-method late-miss rates and lead times.
+- Rejection accounting per reason (`UNKNOWN_WORKFLOW_VERSION`,
+  `FEATURE_UNAVAILABLE`, `UNMAPPED_STAGE`, `INSUFFICIENT_CALIBRATION`,
+  `SHIFT_DETECTED`) with per-stratum calibration metadata written to
+  `calibration_meta.json`.
+- Drift screening of continuous load features via robust Tukey-fence ranges
+  fitted on the training block; out-of-range requests are rejected with
+  `SHIFT_DETECTED`.
+
+### Changed
+
+- Version validity windows for the frozen stage dictionary moved into
+  `p1_stages.yaml` and are now enforced at validation time.
+- `result_hash` covers result-file contents keyed by path relative to the
+  run directory, including the ground-truth file.
+- Censored cases are always assigned to the training block and never
+  contribute a target to calibration or holdout evaluation.
+
 ## [1.3.0] - 2026-03-18
 
 ### Added

@@ -1,0 +1,6 @@
+evaluated_run=P1R_c08ba354f3c8
+holdout_requests=1249 evaluated=1161 rejected=88 censored=0
+coverage[stratified_interval]={'n': 1161, 'covered': 1055, 'coverage': 0.9087, 'coverage_ci95': [0.8908, 0.9239], 'width_hours_mean': 49.32, 'width_hours_median': 46.43}
+coverage[conformal]={'n': 1161, 'covered': 1076, 'coverage': 0.9268, 'coverage_ci95': [0.9104, 0.9404], 'width_hours_mean': 53.32, 'width_hours_median': 50.08}
+coverage[baseline_stratified_quantiles]={'n': 1161, 'covered': 1010, 'coverage': 0.8699, 'coverage_ci95': [0.8494, 0.8881], 'width_hours_mean': 76.84, 'width_hours_median': 74.92}
+coverage[baseline_unstratified_interval]={'n': 1161, 'covered': 1069, 'coverage': 0.9208, 'coverage_ci95': [0.9038, 0.9349], 'width_hours_mean': 46.61, 'width_hours_median': 46.78}

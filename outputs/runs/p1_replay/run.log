@@ -1,0 +1,18 @@
+run_id=P1R_c08ba354f3c8
+seed=20240115 data_hash=0a55b4ac664dc747 config_hash=d875de556a67883a
+cases=5604 events=34695 load_snapshots=872 requests=6887
+block_counts={'train': 3602, 'calibration': 1003, 'holdout': 999}
+fit_rows train=3551 calib=1251
+stratum SITE_A/WF_V1: n_train=300 n_calib=101 insufficient=False
+stratum SITE_A/WF_V2: n_train=366 n_calib=128 insufficient=False
+stratum SITE_A/WF_V3: n_train=444 n_calib=157 insufficient=False
+stratum SITE_B/WF_V1: n_train=428 n_calib=156 insufficient=False
+stratum SITE_B/WF_V2: n_train=419 n_calib=151 insufficient=False
+stratum SITE_B/WF_V3: n_train=448 n_calib=158 insufficient=False
+stratum SITE_C/WF_V1: n_train=424 n_calib=150 insufficient=False
+stratum SITE_C/WF_V2: n_train=349 n_calib=124 insufficient=False
+stratum SITE_C/WF_V3: n_train=373 n_calib=126 insufficient=False
+baselines fit: median_history, stratified_quantiles, raw_timestamp_point, tree_point, unstratified_interval
+shift_flags=172
+result_rows=6887 excluded_rows=1438
+outputs: results.csv excluded_rows.csv calibration_meta.json feature_availability.csv data_quality_report.json data/_ground_truth/true_outcomes.csv

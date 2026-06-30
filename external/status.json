@@ -1,0 +1,9 @@
+{
+  "status": "NOT_OBTAINED",
+  "updated": "2026-06-30",
+  "description": "No external validation dataset has been obtained for this repository. All runs in outputs/runs/ carry status INTERNAL_RESEARCH. The protocol draft in EXTERNAL_VALIDATION_PROTOCOL_DRAFT.md documents how external validation would be run if a dataset becomes available.",
+  "runs_with_external_status": [],
+  "known_issues": [
+    "Coverage of the primary interval on the locked holdout is 0.9087 at target 0.90; the longest-turnaround tail remains the weakest region (late-miss rate 0.692 on cases at or above the P90 remaining threshold)."
+  ]
+}

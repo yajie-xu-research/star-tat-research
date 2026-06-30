@@ -1,0 +1,13 @@
+feature_name,source_table,business_definition,generated_at,queryable_at,available_at_as_of,outcome_only,reviewed_by
+batch_load,load_snapshots,batch load from the latest load snapshot known at as_of_utc,at snapshot time,snapshot_at_utc,same as queue_size_log1p,0,workflow-ops-review-01
+elapsed_hours,cases+events,hours between case received_at_utc and as_of_utc,at snapshot construction,as_of_utc,always (received_at_utc is known at receipt),0,workflow-ops-review-01
+hours_in_stage,events,hours since the latest known stage event occurred,at snapshot construction,as_of_utc,requires at least one event with known_at_utc <= as_of_utc,0,workflow-ops-review-01
+instrument_util,load_snapshots,instrument utilization from the latest load snapshot known at as_of_utc,at snapshot time,snapshot_at_utc,same as queue_size_log1p,0,workflow-ops-review-01
+priority_class,cases,case priority at receipt (STAT or ROUTINE),at case creation,as_of_utc,always,0,workflow-ops-review-01
+queue_size_log1p,load_snapshots,log1p of queue size from the latest load snapshot known at as_of_utc,at snapshot time,snapshot_at_utc,only when a snapshot with snapshot_at_utc <= as_of_utc exists for the site/workflow_version,0,workflow-ops-review-01
+released_at_utc,cases,release timestamp; the prediction outcome,at release,never as a feature,never; outcome only,1,workflow-ops-review-01
+site_key,cases,originating site (used by pooled comparison models only),at case creation,as_of_utc,always,0,workflow-ops-review-01
+stage_progress,events+stage_map,stages_completed divided by the site's stage chain length,at snapshot construction,as_of_utc,requires dictionary row for site/workflow_version,0,workflow-ops-review-01
+stages_completed,events+stage_map,number of canonical stages reached by known events,at snapshot construction,as_of_utc,requires dictionary row for site/workflow_version,0,workflow-ops-review-01
+test_family,cases,test family assigned at receipt,at case creation,as_of_utc,always,0,workflow-ops-review-01
+workflow_version,cases,workflow version in force at receipt (used by pooled comparison models only),at case creation,as_of_utc,requires dictionary row for the version,0,workflow-ops-review-01

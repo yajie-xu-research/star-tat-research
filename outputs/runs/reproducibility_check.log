@@ -1,0 +1,12 @@
+Reproducibility check (recorded as part of the v1.4.0 release assembly)
+Method: rerun the documented pipeline in a clean directory with the same
+seed and configs, then apply the documented manifest normalization
+(logical utc/stamp, relative command paths, commit placeholder).
+Pipeline: generate-synthetic --seed 20240115 | validate | p1 replay | p1 evaluate
+
+- synthetic_data: IDENTICAL
+- outputs/runs/p1_replay: IDENTICAL
+- outputs/runs/p1_evaluation: IDENTICAL
+
+Result: PASS - every artifact byte-identical
+Pytest suite: see CI/test log of the same assembly

@@ -1,0 +1,33 @@
+{
+  "_result_files": [
+    "evaluation_details.csv",
+    "evaluation_report.md",
+    "run_receipt.json"
+  ],
+  "command": "star-tat p1 evaluate --run outputs/runs/p1_replay --out outputs/runs/p1_evaluation",
+  "commit": "a654154b7ad1bb8578c354311823bff85eb660de",
+  "config_hash": "d875de556a67883ae442347d18c396c2257cdf358eed9502b883c2f8df27c69b",
+  "data_hash": "d226c4495ba79fc3f40bb269475cacfb001be4650b565e8d5cbebd29275782bc",
+  "environment": {
+    "executable": "venv/bin/python3",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "pytest": "8.4.2",
+    "python": "3.12.13",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.1"
+  },
+  "excluded_rows": 88,
+  "input_rows": 6887,
+  "known_issues": [],
+  "model_or_rule_version": "v1.0/v1.0/tat-gbm-1.4/stratified-absres-1.4",
+  "operator": "internal-research-operator",
+  "permissions_pointer": "governance:internal_research:v1",
+  "project": "P1_STAR_TAT",
+  "result_hash": "80a6a0108233516aa1e10653808a91bbf325223e12288ae531d958215f1f6c4d",
+  "run_id": "P1E_f9a0e9f4741b",
+  "seed": 20240115,
+  "status": "INTERNAL_RESEARCH",
+  "utc": "2026-06-30T09:15:00Z"
+}
